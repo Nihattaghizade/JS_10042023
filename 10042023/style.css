@@ -1,0 +1,46 @@
+.slider {
+    position: relative;
+    max-width: 240px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: aquamarine;
+}
+  
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.active {
+    opacity: 1;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+  
+.prev {
+    margin-left: 34%;
+}
+  
+.next {
+    margin-left: 56%;
+}
+  

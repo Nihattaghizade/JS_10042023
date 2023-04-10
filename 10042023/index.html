@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Slider</title>
-</head>
-<body>
-    <div id="slider"></div>
+  </head>
+  <body>
+    <div class="slider">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/b/b9/Ezio_Auditore_da_Firenze.png"
+        class="slide"
+      />
+      <img
+        src="https://static.wikia.nocookie.net/assassinscreed/images/1/18/ACRG_Shay_Unhooded.png/revision/latest?cb=20161228115541"
+        class="slide"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/6/66/HaythamKenway.png"
+        class="slide"
+      />
+    </div>
+    <button class="prev" onclick="prevSlide()">Previous</button>
+    <button class="next" onclick="nextSlide()">Next</button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,16 +1,20 @@
 "use strict";
 
-const slider = document.getElementById("slider");
-const input = document.createElement("input");
-input.setAttribute("type", "range");
-input.setAttribute("min", "0");
-input.setAttribute("max", "100");
-input.setAttribute("value", "50");
-input.setAttribute("step", "0.1");
-input.setAttribute("class", "slider");
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
-slider.appendChild(input);
+function showSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
 
-input.addEventListener("input", function() {
-  console.log(this.value); 
-});
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+showSlide(currentSlide);
